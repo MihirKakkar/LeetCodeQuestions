@@ -2,14 +2,17 @@
 # We define an array is non-decreasing if array[i] <= array[i + 1] holds for every i (1 <= i < n).
 
 def NonDecreasingArray(arrayyy):
+    #counter for number of moves
+
     for i in arrayyy:
         if arrayyy[i] <= arrayyy[i + 1]:
             return True
             #checks assending order
 
         else:
-            arrayyy[i], arrayyy[i + 1] = arrayyy[i + 1], arrayyy[i]
+            arrayyy[i] == arrayyy[i+1]
             #the single move to make it assending order
+
             for i in arrayyy:
                 if arrayyy[i] <= arrayyy[i + 1]:
                     return arrayyy
@@ -18,6 +21,4 @@ def NonDecreasingArray(arrayyy):
                 else:
                     return False
 
-
-
-print(NonDecreasingArray([1,124,8,123, 125, 199]))
+print(NonDecreasingArray([1, 2, 9, 10, 5]))
