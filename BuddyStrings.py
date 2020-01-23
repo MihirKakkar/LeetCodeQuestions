@@ -2,8 +2,8 @@
 
 def BuddyStrings(A, B):
     #making it lower
-    A = str(A.lowercase())
-    B = str(B.lowercase())
+    A = str(A.lower())
+    B = str(B.lower())
     ArrayA = list(A)
     ArrayB = list(B)
 
@@ -15,12 +15,12 @@ def BuddyStrings(A, B):
     for i in range(0, Alength):
         i += 1
         #initial checker
-        if (A[i] == B[i]):
+        if (ArrayA[i] == ArrayB[i]):
             return True
         else:
             #one swap
-            A[i], A[i+1] == A[i+1], A[i]
-            if (A[i] == B[i]):
+            ArrayA[i], ArrayA[i+1] == ArrayA[i+1], ArrayA[i]
+            if (ArrayA[i] == ArrayB[i]):
                 return True
             else:
                 return False
