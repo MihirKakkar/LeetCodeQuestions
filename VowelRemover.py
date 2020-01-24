@@ -1,13 +1,15 @@
 #Removes all of the vowels in a string
 
-def VowelRemover(word):
+def VowelRemover(ListWord):
 
   vowels = {
   'a', 'e', 'i', 'o', 'u'
   }
 
-  for z in word:
-      if z in vowels:
-          word.replace(z, "")
-          return word
-          
+  for z in ListWord.lower():
+    if z in vowels:
+        ListWord = ListWord.replace(z, "")
+
+  print(ListWord)
+
+VowelRemover("Heeyeeeeeoeeooooooooooooeeee")
