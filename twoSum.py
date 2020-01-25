@@ -16,4 +16,4 @@ def twoSum(nums, target):
 print(twoSum([1,2,3,4,5], 7))
     #[1,4]
 print(twoSum([3,4], 6))
-    #None
+    #None because same index
