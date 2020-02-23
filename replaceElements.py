@@ -4,6 +4,6 @@
 def replaceElements(arr):
     for i in arr:
         if arr[i+1] > arr[i]:
-            arr[i+1] = arr[i] and arr[i] = arr[i+1]
-            arr[:-1] = -1
             
+
+            arr[:-1] = -1
