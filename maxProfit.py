@@ -13,7 +13,7 @@ def maxProfit(prices):
 
     for i in prices:
         if i < minimumPrice:
-            minimumProf = i
+            minimumPrice = i
         elif i - minimumPrice > maximumProf:
             maximumProf = i - minimumPrice
 
