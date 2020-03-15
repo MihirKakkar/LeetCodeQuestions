@@ -3,11 +3,7 @@
 # Your function should return true if any value appears at least twice in the array, and it should return false if every element is distinct.
 
 def containsDuplicate(A):
-
-    hm = {}
-    for i in A:
-        if i in hm:
-            return i
-        hm[i] = true
-
-containsDuplicate
+    iterate = len(A)
+    iteratecheck = len(set(A))
+    return iterate != iteratecheck
+containsDuplicate()
