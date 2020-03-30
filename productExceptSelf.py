@@ -3,5 +3,7 @@
 def productExceptSelf(nums):
     counter = 0
     for i in nums:
-        counter++
-        if nums[i] == counter:
+        counter = counter + 1
+        if nums[i] != counter:
+            
+
