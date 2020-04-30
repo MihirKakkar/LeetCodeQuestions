@@ -4,3 +4,17 @@
 
 # To invert an image means that each 0 is replaced by 1, and each 1 is replaced by 0. For example, inverting [0, 1, 1] results in [1, 0, 0].
 
+def flipAndInvertImage(A):
+    # Flipping the image
+
+    B = A[::-1]
+    result = []
+
+    for i in B:
+        # Inverting the image
+        result.append(1 - i)
+
+    return result
+
+#testing done below
+# print(flipAndInvertImage([1, 1, 1, 1, 1, 0, 0, 1, 0]))
