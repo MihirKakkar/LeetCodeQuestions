@@ -9,7 +9,7 @@ class TreeNode:
         self.right = right
 
 class Solution(object):
-    def isUnivalTree(root):
+    def isUnivalTree(self, root):
 
         checker = []
 
