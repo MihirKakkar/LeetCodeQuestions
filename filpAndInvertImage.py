@@ -12,9 +12,9 @@ def flipAndInvertImage(A):
 
     for i in B:
         # Inverting the image
-        result.append(1 - i)
+        result.append(1 - B[i])
 
-    return result
+    return result, B
 
 #testing done below
-# print(flipAndInvertImage([1, 1, 1, 1, 1, 0, 0, 1, 0]))
+print(flipAndInvertImage([1,1,0,1,1,1,1,1,1,1,1,0]))
