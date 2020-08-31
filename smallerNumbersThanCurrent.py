@@ -4,15 +4,26 @@
 # Return the answer in an array.
 
 def smallerNumbersThanCurrent(nums):
-    resultArr = []
-    for i in nums:
-        numberOfSmaller = 0
-        for j in nums:
-            if i > j:
-                numberOfSmaller += 1
-        resultArr.append(numberOfSmaller)
+    # INEFFICIENT SOLUTION: 
+    # resultArr = []
+    # for i in nums:
+    #     numberOfSmaller = 0
+    #     for j in nums:
+    #         if i > j:
+    #             numberOfSmaller += 1
+    #     resultArr.append(numberOfSmaller)
             
+    # return resultArr
 
-    print(resultArr)
+    #NEW SOLUTION
+    resultArr = []
+    sortedArr = sorted(nums)
+    hm = {}
+    for i in range(len(sortedArr)):
+        if sortedArr[i] not in hm:
+            hm[sortedArr[i]] = i
+    for i in range(len(nums)):
+        resultArr.append(hm[nums[i]])
+    return resultArr
 
-smallerNumbersThanCurrent([1,5,2,3])
+print(smallerNumbersThanCurrent([1,4,3,7]))
