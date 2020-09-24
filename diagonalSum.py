@@ -20,6 +20,4 @@ def diagonalSum(mat):
 
     return finalSum, lenY
 
-print(diagonalSum([[1,2,3,4,5],[1,2,3,4,5],[1,2,3,4,5],[1,2,3,4,5],[1,2,3,4,5]]))
-print(diagonalSum([[1,2,3,4],[1,2,3,4],[1,2,3,4],[1,2,3,4]]))
-print(diagonalSum([[1,2,3],[4,5,6],[7,8,9]]))
+
