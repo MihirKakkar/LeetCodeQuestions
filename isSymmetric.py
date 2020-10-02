@@ -10,7 +10,7 @@ class Solution(object):
     def isSymmetric(self, root):
         if root is None:
             return True
-        return self.symmetry(root.left == root.right)
+        return self.symmetry(root.left, root.right)
     
     def symmetry(self, l, r):
         if l and r:
