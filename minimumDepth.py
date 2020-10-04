@@ -10,11 +10,20 @@ class TreeNode(object):
 
 class Solution(object):
     def minDepth(self, root):
-        """
-        :type root: TreeNode
-        :rtype: int
-        """
-        if root is None:
-            return 0
-
-        return 1 + min(self.minDepth(root.left), self.minDepth(root.right))
+        def traverse(root):
+            
+            if root is None:
+                return 0
+            
+            if root.left is None and root.right is None:
+                return 1
+            
+            if root.left is None:
+                return traverse(root.right) + 1
+            
+            if root.right is None:
+                return traverse(root.left) + 1
+            return min(traverse(root.left), traverse(root.right)) + 1
+        
+        return traverse(root)
+        
