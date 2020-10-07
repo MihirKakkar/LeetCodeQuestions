@@ -14,6 +14,6 @@ class Solution(object):
             traversal(root.left)
             traversal(root.right)
 
-    resultArr = []
-    traversal(root)
-    return resultArr
+        resultArr = []
+        traversal(root)
+        return resultArr
